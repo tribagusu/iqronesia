@@ -1,18 +1,22 @@
 import React, { FC, useState, useRef, useEffect } from "react";
 import { type TWebNav } from "@/lib/types";
-import DropdownMenu from "./menu-dropdown";
+import MobileDropdown from "./mobile-dropdown";
 import { IoIosArrowDown } from "react-icons/io";
+import Link from "next/link";
+Link;
 
-type NavMenuProps = {
+type MobileMenuProps = {
   nav?: TWebNav;
   depthLevel?: number;
   menu?: any;
+  showNav: any;
+  setShowNav: any;
 };
 
-const NavMenu: FC<NavMenuProps> = ({ nav, depthLevel }) => {
+const MobileMenu: FC<MobileMenuProps> = ({ nav, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
 
-  let ref = useRef<HTMLLIElement>(null);
+  let ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handler = (event: any) => {
@@ -29,21 +33,8 @@ const NavMenu: FC<NavMenuProps> = ({ nav, depthLevel }) => {
     };
   }, [dropdown]);
 
-  const onMouseEnter = () => {
-    window.innerWidth > 960 && setDropdown(true);
-  };
-
-  const onMouseLeave = () => {
-    window.innerWidth > 960 && setDropdown(false);
-  };
-
   return (
-    <li
-      className="menu-items"
-      ref={ref}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+    <>
       {nav?.menu ? (
         <>
           <button
@@ -51,14 +42,15 @@ const NavMenu: FC<NavMenuProps> = ({ nav, depthLevel }) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
-            className="flex items-center gap-1"
+            className="flex items-center justify-between my-0 mx-auto w-full py-3 border-b border-[#ddd]"
           >
-            <span>{nav?.title}</span>
-            <span>
+            {nav?.title}{" "}
+            <span className="text-[12px] text-gray-600">
               <IoIosArrowDown />
             </span>
           </button>
-          <DropdownMenu
+
+          <MobileDropdown
             menus={nav.menu}
             depthLevel={depthLevel}
             dropdown={dropdown}
@@ -67,8 +59,8 @@ const NavMenu: FC<NavMenuProps> = ({ nav, depthLevel }) => {
       ) : (
         <a href="/#">{nav?.title}</a>
       )}
-    </li>
+    </>
   );
 };
 
-export default NavMenu;
+export default MobileMenu;

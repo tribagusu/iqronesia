@@ -6,7 +6,7 @@ import Image from "next/image";
 import useScrollListener from "@/hooks/useScroll";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
-// import MobileNav from "./mobile-nav";
+import MobileNav from "./mobile/mobile-menu";
 import logo from "@/public/logo.png";
 import { webNavData } from "@/config/nav";
 import NavMenu from "./nav-menu";
@@ -16,7 +16,6 @@ const WebNav = () => {
   const scroll = useScrollListener();
   const [showInfo, setShowInfo] = useState(true);
   const [showNav, setShowNav] = useState(false);
-  const [activeNav, setActiveNav] = useState(null);
 
   useEffect(() => {
     const _classList = [];
@@ -57,16 +56,27 @@ const WebNav = () => {
 
           <div className="bg-transparent w-10 h-10 flex justify-center items-center">
             <button
-              className="text-darkPurple text-2xl p-2 md:hidden"
+              className="text-darkGreen text-[1.6rem] p-2 md:hidden"
               onClick={() => setShowNav(!showNav)}
             >
               {showNav ? <AiOutlineClose /> : <FiMenu />}
             </button>
           </div>
         </div>
-        {/* {showNav && (
-          <MobileNav items={items} showNav={showNav} setShowNav={setShowNav} />
-        )} */}
+        <div className="container">
+          {showNav && (
+            <nav className="flex flex-col w-full h-screen cursor-pointer py-2 bg-white">
+              {webNavData?.map((nav, index) => (
+                <MobileNav
+                  nav={nav}
+                  key={index}
+                  showNav={showNav}
+                  setShowNav={setShowNav}
+                />
+              ))}
+            </nav>
+          )}
+        </div>
       </header>
     </div>
   );

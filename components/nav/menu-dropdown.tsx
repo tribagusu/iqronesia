@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
-// import { aboutNavConfig } from "@/config/nav";
 import { type TMenu } from "@/lib/types";
-import NavMenu from "./nav-menu";
 
 type DropdownProps = {
   menus: TMenu[];
@@ -10,7 +8,7 @@ type DropdownProps = {
   dropdown: boolean;
 };
 
-const DropdownMenu: React.FC<DropdownProps> = ({
+const MenuDropdown: React.FC<DropdownProps> = ({
   menus,
   depthLevel,
   dropdown,
@@ -29,4 +27,4 @@ const DropdownMenu: React.FC<DropdownProps> = ({
   );
 };
 
-export default DropdownMenu;
+export default MenuDropdown;

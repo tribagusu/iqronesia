@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import WebFooter from "@/components/web-footer";
+import WebFooter from "@/components/footer";
 import WebNav from "@/components/nav/web-nav";
 
 type WebLayoutProps = {

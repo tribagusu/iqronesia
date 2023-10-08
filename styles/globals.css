@@ -11,7 +11,7 @@
 }
 
 .web-header.info--hidden {
-  @apply translate-y-[-63%]  md:translate-y-[-52%]  border-[#ddd];
+  @apply translate-y-[-55%]  md:translate-y-[-52%]  border-[#ddd];
 }
 
 /* button */
@@ -34,4 +34,10 @@
 
 .btn-sm-green {
   @apply btn-sm bg-green text-white hover:bg-darkGreen;
+}
+
+/* dropdown */
+
+.mobile-dropdown {
+  @apply hidden items-center my-0 mx-auto w-full pl-6 py-2;
 }
