@@ -10,7 +10,7 @@ const WebLayout: FC<WebLayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col">
       <WebNav />
-      <main className="flex-1">{children}</main>
+      <main>{children}</main>
       <WebFooter />
     </div>
   );

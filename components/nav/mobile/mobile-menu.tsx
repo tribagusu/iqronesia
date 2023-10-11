@@ -42,7 +42,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ nav, depthLevel }) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
-            className="flex items-center justify-between my-0 mx-auto w-full py-3 border-b border-[#ddd]"
+            className="flex items-center justify-between mx-auto w-full py-3 text-[15px]"
           >
             {nav?.title}{" "}
             <span className="text-[12px] text-gray-600">

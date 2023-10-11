@@ -6,7 +6,7 @@ import Image from "next/image";
 import useScrollListener from "@/hooks/useScroll";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
-import MobileNav from "./mobile/mobile-menu";
+import MobileMenu from "./mobile/mobile-menu";
 import logo from "@/public/logo.png";
 import { webNavData } from "@/config/nav";
 import NavMenu from "./nav-menu";
@@ -65,9 +65,9 @@ const WebNav = () => {
         </div>
         <div className="container">
           {showNav && (
-            <nav className="flex flex-col w-full h-screen cursor-pointer py-2 bg-white">
+            <nav className="flex flex-col w-full cursor-pointer py-3 px-5 bg-white absolute left-0">
               {webNavData?.map((nav, index) => (
-                <MobileNav
+                <MobileMenu
                   nav={nav}
                   key={index}
                   showNav={showNav}

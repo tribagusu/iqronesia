@@ -22,7 +22,7 @@ const MobileDropdown: React.FC<MobileDropdownProps> = ({
         <Link
           key={index}
           href={menu.href}
-          className="flex items-center my-0 mx-auto w-full pl-6 py-2 border-b border-[#ddd]"
+          className="flex items-center my-0 mx-auto w-full py-2 border-b border-[#ddd] text-[15px]"
         >
           {menu.title}
         </Link>

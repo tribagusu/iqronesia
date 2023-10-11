@@ -11,7 +11,7 @@
 }
 
 .web-header.info--hidden {
-  @apply translate-y-[-55%]  md:translate-y-[-52%]  border-[#ddd];
+  @apply translate-y-[-63%] sm:translate-y-[-57%]  md:translate-y-[-52%]  border-[#ddd];
 }
 
 /* button */
