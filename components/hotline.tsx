@@ -10,7 +10,7 @@ const Hotline = () => {
             <BsFillTelephoneFill />
           </span>
           <h2 className="text-[18px] md:text-[25px]">
-            <strong>+61 422 466 165</strong> (Iqro Hotline)
+            <strong>+61 422 466 165</strong> (IQRO Hotline)
           </h2>
         </div>
       </div>

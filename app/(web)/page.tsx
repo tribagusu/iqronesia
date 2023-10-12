@@ -3,6 +3,7 @@ import "styles/styles.css";
 import Hero from "@/components/hero";
 import Hotline from "@/components/hotline";
 import Featured from "@/components/featured";
+import RecentArticles from "@/components/recent-articles";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Hotline />
       <Featured />
+      <RecentArticles />
     </>
   );
 }

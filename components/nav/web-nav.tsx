@@ -29,19 +29,28 @@ const WebNav = () => {
   return (
     <div className={`web-header ${!showNav ? navClassList.join(" ") : null}`}>
       {showInfo && (
-        <div className="info">
-          <p className="text-center">
-            You can make a difference! Support our community by{" "}
+        <div className="info flex-col md:flex-row md:gap-2">
+          <p className="text-center">You can make a difference!</p>
+          <span className="flex items-center gap-1">
+            <p>Support our community by</p>
             <Link href="#" target="_blank" className="btn-sm-green">
               Donate
             </Link>
-          </p>
+          </span>
         </div>
       )}
       <header className="web-nav">
         <div className="container flex justify-between items-center">
-          <Link href="/" className="flex" onClick={() => setShowNav(false)}>
-            <Image src={logo} alt="iqro" className="w-auto h-[35px]" />
+          <Link
+            href="/"
+            className="block px-2"
+            onClick={() => setShowNav(false)}
+          >
+            <Image
+              src={logo}
+              alt="iqro"
+              className="w-auto h-[35px] md:h-[45px]"
+            />
           </Link>
           {webNavData?.length ? (
             <nav className="hidden md:flex relative ">

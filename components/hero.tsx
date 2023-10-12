@@ -6,9 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-
 import img1 from "@/public/images/hero-image-1.png";
 import img2 from "@/public/images/hero-image-2.png";
 import img3 from "@/public/images/hero-image-3.png";
@@ -23,22 +20,6 @@ const Hero = () => {
     speed: 500,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    // nextArrow: (
-    //   <div className="relative">
-    //     <div className="next-slick-arrow hidden md:absolute">
-    //       {" "}
-    //       <BsFillArrowRightCircleFill />{" "}
-    //     </div>
-    //   </div>
-    // ),
-    // prevArrow: (
-    //   <div className="">
-    //     <div className="prev-slick-arrow hidden md:absolute">
-    //       {" "}
-    //       <BsFillArrowLeftCircleFill />{" "}
-    //     </div>
-    //   </div>
-    // ),
   };
 
   return (
