@@ -56,7 +56,6 @@
 .menu-items a {
   text-align: left;
   padding: 0.7rem 1rem;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .menu-items button:hover {
@@ -91,7 +90,7 @@
   min-width: 10rem;
   padding: 0;
   list-style: none;
-  background-color: #fff;
+  background-color: white;
   border-radius: 0.3rem;
   display: none;
   border-top: 1px solid #dddddd6d;
@@ -131,9 +130,19 @@
   padding: 5px 15px;
 }
 
+.pill-md {
+  display: inline-block;
+  text-align: center;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
 .button-green {
   display: flex;
   align-items: center;
+  width: fit-content;
+  align-self: flex-end;
   gap: 0.5rem;
   color: #768948;
   font-weight: 600;
@@ -150,17 +159,38 @@
 /* _react slick */
 
 .slick-prev {
-  left: -52px !important;
+  left: -45px !important;
 }
 .slick-next:before,
 .slick-prev:before {
   content: "" !important;
 }
+
 .next-slick-arrow,
 .prev-slick-arrow {
-  color: #34623f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #768948;
+  color: white;
   font-size: 35px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  /* position: absolute; */
 }
+
+.next-slick-arrow {
+  bottom: -50px;
+  right: 50%;
+}
+
+.prev-slick-arrow {
+  bottom: -50px;
+  left: 50%;
+}
+
 .slick-dots {
   bottom: 10px !important;
 }
@@ -169,6 +199,36 @@
 }
 .slick-dots li.slick-active button:before {
   color: #b39c4d;
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.arrow-button-left,
+.arrow-button-right {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+.arrow-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  background: #768948;
+  border: 1px solid #768948;
 }
 
 /* _react player */
@@ -180,7 +240,3 @@
   padding-top: 56.25%;
   position: relative;
 }
-
-/* .react-player > div {
-  position: absolute;
-} */

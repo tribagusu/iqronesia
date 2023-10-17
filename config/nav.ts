@@ -6,19 +6,19 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "History",
-        href: "/history",
+        href: "about/history",
       },
       {
         title: "Organisation",
-        href: "/organisation",
+        href: "about/organisation",
       },
       {
         title: "Contact",
-        href: "/contact",
+        href: "about/contact",
       },
       {
         title: "Iqro Centre Perth",
-        href: "/iqrocentreperth",
+        href: "about/iqrocentreperth",
       },
     ],
   },
@@ -27,23 +27,23 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "Da'wah",
-        href: "/dawah",
+        href: "program/dawah",
       },
       {
         title: "Fundraising",
-        href: "/fundraising",
+        href: "program/fundraising",
       },
       {
         title: "Sisterhood",
-        href: "/sisterhood",
+        href: "program/sisterhood",
       },
       {
         title: "Social and Welfare",
-        href: "/social-and-welfare",
+        href: "program/social-and-welfare",
       },
       {
         title: "Sport and Leisure",
-        href: "/sport-and-leisure",
+        href: "program/sport-and-leisure",
       },
     ],
   },
@@ -52,11 +52,11 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "News",
-        href: "/news",
+        href: "news/news",
       },
       {
         title: "Media",
-        href: "/media",
+        href: "news/media",
       },
     ],
   },
@@ -65,11 +65,11 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "Donation",
-        href: "/donation",
+        href: "get-involved/donation",
       },
       {
         title: "Volunteer",
-        href: "/volunteer",
+        href: "get-involved/volunteer",
       },
     ],
   },

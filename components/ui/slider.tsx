@@ -23,22 +23,22 @@ const SliderCarousel = () => {
     speed: 500,
     autoplaySpeed: 2500,
     pauseOnHover: true,
-    // nextArrow: (
-    //   <div className="relative">
-    //     <div className="next-slick-arrow hidden md:absolute">
-    //       {" "}
-    //       <BsFillArrowRightCircleFill />{" "}
-    //     </div>
-    //   </div>
-    // ),
-    // prevArrow: (
-    //   <div className="">
-    //     <div className="prev-slick-arrow hidden md:absolute">
-    //       {" "}
-    //       <BsFillArrowLeftCircleFill />{" "}
-    //     </div>
-    //   </div>
-    // ),
+    nextArrow: (
+      <div className="relative">
+        <div className="next-slick-arrow hidden md:absolute">
+          {" "}
+          <BsFillArrowRightCircleFill />{" "}
+        </div>
+      </div>
+    ),
+    prevArrow: (
+      <div className="">
+        <div className="prev-slick-arrow hidden md:absolute">
+          {" "}
+          <BsFillArrowLeftCircleFill />{" "}
+        </div>
+      </div>
+    ),
   };
 
   return (

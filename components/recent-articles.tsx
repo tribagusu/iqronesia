@@ -2,23 +2,24 @@ import React from "react";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
+import { recentArticles } from "@/config/recent-articles";
+import { useMaxChar } from "@/hooks/use-max-char";
 
+import { BsArrowRightShort } from "react-icons/bs";
 import img1 from "@/public/images/tech1.jpeg";
-import img2 from "@/public/images/tech2.jpeg";
-import img3 from "@/public/images/tech3.jpg";
 
 const RecentArticles = () => {
   return (
     <div className="container my-[5rem]">
-      <div className="flex justify-between mb-10">
+      <div className="flex flex-col md:flex-row justify-between mb-10">
         <div className="flex flex-col">
-          <h2 className="font-bold text-3xl">Recent Articles</h2>
-          <p>
+          <h2 className="font-bold text-3xl mb-2">Recent Articles</h2>
+          <p className="mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
             ab.
           </p>
         </div>
-        <Link href="/" className="button-green h-[2.5rem]">
+        <Link href="/" className="button-green smooth h-[2.5rem]">
           View All{" "}
           <span>
             <BsArrowRight />
@@ -27,66 +28,41 @@ const RecentArticles = () => {
       </div>
 
       {/* articles */}
-      <div className="flex flex-col md:flex-row w-full justify-between gap-3">
-        <Link
-          href="/"
-          className="flex flex-col relative bg-black h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
-        >
-          <Image
-            src={img1}
-            alt="image"
-            className="object-cover w-full h-[30rem] opacity-70"
-          />
-          <div className="absolute left-0 bottom-0 text-white px-5 mb-10">
-            <h4 className="font-bold text-2xl mb-5">
-              This is Where The Article Title Goes
-            </h4>
-            <div className="flex items-center justify-between ">
-              <small className="pill px-2 bg-mustard">Meilina Widyawati</small>
-              <small>25 Oct, 2023</small>
+      <div className="flex flex-col md:flex-row w-full justify-between gap-5">
+        {recentArticles.map((articles) => (
+          <div
+            key={articles.id}
+            className="flex flex-col relative bg-black h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
+          >
+            <Image
+              src={img1}
+              alt="image"
+              className="object-cover w-full h-[30rem] opacity-60 transition ease-in-out duration-500 hover:scale-105"
+            />
+            <div className="absolute left-0 bottom-0 text-white px-5 mb-5">
+              <div className="flex items-center justify-between ">
+                <small className="pill px-2 mb-3 bg-mustard">
+                  {articles.author}
+                </small>
+                <small>{articles.date}</small>
+              </div>
+              <h4 className="font-bold text-2xl mb-5">
+                {useMaxChar(articles.title, 55)}
+              </h4>
+              <div className="flex">
+                <Link
+                  href="/"
+                  className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 p-2 hover:underline text-mustard"
+                >
+                  <span className="">Read more</span>
+                  <span className="text-lg scale-x-150">
+                    <BsArrowRightShort />
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
-        </Link>
-
-        <Link
-          href="/"
-          className="flex flex-col relative bg-black h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
-        >
-          <Image
-            src={img2}
-            alt="image"
-            className="object-cover w-full h-[30rem] opacity-70"
-          />
-          <div className="absolute left-0 bottom-0 text-white px-5 mb-10">
-            <h4 className="font-bold text-2xl mb-5">
-              This is Where The Article Title Goes
-            </h4>
-            <div className="flex items-center justify-between ">
-              <small className="pill px-2 bg-mustard">Meilina Widyawati</small>
-              <small>25 Oct, 2023</small>
-            </div>
-          </div>
-        </Link>
-
-        <Link
-          href="/"
-          className="flex flex-col relative bg-black h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
-        >
-          <Image
-            src={img3}
-            alt="image"
-            className="object-cover w-full h-[30rem] opacity-70"
-          />
-          <div className="absolute left-0 bottom-0 text-white px-5 mb-10">
-            <h4 className="font-bold text-2xl mb-5">
-              This is Where The Article Title Goes
-            </h4>
-            <div className="flex items-center justify-between ">
-              <small className="pill px-2 bg-mustard">Meilina Widyawati</small>
-              <small>25 Oct, 2023</small>
-            </div>
-          </div>
-        </Link>
+        ))}
       </div>
     </div>
   );

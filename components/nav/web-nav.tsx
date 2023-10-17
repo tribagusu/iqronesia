@@ -3,7 +3,7 @@
 import React, { FC, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import useScrollListener from "@/hooks/useScroll";
+import useScrollListener from "@/hooks/use-scroll";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import MobileMenu from "./mobile/mobile-menu";

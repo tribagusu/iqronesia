@@ -1,97 +1,111 @@
 export const footerData = [
   {
-    title: "Mengapa Squadgames",
+    title: "About",
     items: [
       {
-        name: "Dukungan purna jual",
-        link: "/after-sales",
+        name: "History",
+        link: "about/history",
         blank: false,
       },
       {
-        name: "Klien kami",
-        link: "/our-client",
+        name: "Organisation",
+        link: "about/organisation",
+        blank: false,
+      },
+      {
+        name: "Contact",
+        link: "about/contact",
         blank: false,
       },
     ],
   },
   {
-    title: "Produk",
+    title: "Project",
     items: [
       {
-        name: "Softskill training",
-        link: "product/softskill-training",
+        name: "Upgrading Masjid",
+        link: "project/upgrading-masjid",
         blank: false,
       },
       {
-        name: "In venue team building",
-        link: "product/in-venue",
-        blank: false,
-      },
-      {
-        name: "Team building in city",
-        link: "product/team-building",
-        blank: false,
-      },
-      {
-        name: "Corporate event",
-        link: "product/corporate-event",
-        blank: false,
-      },
-      {
-        name: "Family gathering",
-        link: "product/family-gathering",
-        blank: false,
-      },
-      {
-        name: "Retirement preparation",
-        link: "product/retirement-preparation",
+        name: "Iqro Perth Expansion",
+        link: "project/iqro-perth-expansion",
         blank: false,
       },
     ],
   },
   {
-    title: "Solusi",
+    title: "Program",
     items: [
       {
-        name: "Peopleshift",
-        link: "https://peopleshift.id",
-        blank: true,
+        name: "Da'wah",
+        link: "program/dawah",
+        blank: false,
       },
       {
-        name: "Shiftacademy",
-        link: "https://shiftacademy.id",
-        blank: true,
+        name: "Fundraising",
+        link: "program/fundraising",
+        blank: false,
       },
       {
-        name: "Squadgames",
-        link: "https://squadgames.id",
-        blank: true,
+        name: "Sisterhood",
+        link: "program/sisterhood",
+        blank: false,
+      },
+      {
+        name: "Social and Welfare",
+        link: "program/social-and-welfare",
+        blank: false,
+      },
+      {
+        name: "Sports and Leisure",
+        link: "program/sports-and-leisure",
+        blank: false,
+      },
+      {
+        name: "Youth (YES)",
+        link: "program/youth",
+        blank: false,
+      },
+      {
+        name: "TPA Salsabeela",
+        link: "program/tpa-salsabeela",
+        blank: false,
       },
     ],
   },
   {
-    title: "Perusahaan",
+    title: "Media",
     items: [
       {
-        name: "Tentang Squadgames",
-        link: "/about-squadgames",
+        name: "Event",
+        link: "media/event",
         blank: false,
-      },
-      {
-        name: "Hubungi kami",
-        link: "/contact-us",
-        blank: true,
       },
       {
         name: "Blog",
-        link: "/blog",
-        blank: true,
+        link: "media/event",
+        blank: false,
       },
       {
-        name: "Karir",
-        add: " - We're Hiring!",
-        link: "https://www.linkedin.com/company/peopleshift/jobs/",
-        blank: true,
+        name: "Gallery",
+        link: "media/gallery",
+        blank: false,
+      },
+    ],
+  },
+  {
+    title: "Get Involved",
+    items: [
+      {
+        name: "Donation",
+        link: "get-involved/donation",
+        blank: false,
+      },
+      {
+        name: "Volunteer",
+        link: "get-involved/volunteer",
+        blank: false,
       },
     ],
   },

@@ -15,7 +15,7 @@ const WebFooter = () => {
     <footer className="space-y-6 pt-[3rem] lg:pt-[5rem] bg-green">
       <div className="container flex flex-col lg:flex-row text-white pb-0 md:pb-[2rem]">
         <div className="mr-[5rem] mb-[2rem]">
-          <Image src={logoWhite} alt="iqro" className="w-[200px]" />
+          <Image src={logoWhite} alt="iqro" className="w-[150px]" />
         </div>
         <div className="flex flex-col md:flex-row">
           {footerData?.map((data, i) => (
@@ -26,9 +26,9 @@ const WebFooter = () => {
                   <Link
                     href={`${item.link}`}
                     target={`${item.blank ? "_blank" : "_self"}`}
-                    className="hover:text-orange md:mt-[3px]"
+                    className="hover:underline hover:text-mustard md:mt-[3px]"
                   >
-                    {item.name} <span className="text-orange">{item.add}</span>
+                    {item.name}
                   </Link>
                 </div>
               ))}
@@ -36,11 +36,8 @@ const WebFooter = () => {
           ))}
         </div>
       </div>
-      <div className="container flex flex-col md:flex-row text-white border-t border-t-[#D9BCFF] py-[1rem]">
+      <div className="container flex flex-col md:flex-row text-white border-t border-t-lightGreen py-[1rem]">
         <div className="flex gap-3 text-white text-3xl mr-[10rem] mb-[2rem]">
-          <Link href="https://linkedin.com" target="_blank" className="">
-            <AiFillLinkedin />
-          </Link>
           <Link href="https://instagram.com" target="_blank" className="">
             <AiFillInstagram />
           </Link>
@@ -52,16 +49,18 @@ const WebFooter = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-1">
-          <p>puti@peopleshift.id</p>
-          <p>
-            Satrio Tower 6th Floor, Unit 1 Mega Kuningan, Jl. Prof. DR. Satrio
-            C4, Jakarta 12950
-          </p>
-          <p>+62 812-9079-4006 (Jagad) | +62 821-1557-0991 (Puti)</p>
+          <div className="flex gap-10">
+            <h5 className="uppercase font-bold">iqro centre sydney</h5>
+            <p>39 McCourt Street, Wiley Park, NSW 2195</p>
+          </div>
+          <div className="flex gap-10">
+            <h5 className="uppercase font-bold">iqro centre perth</h5>
+            <p>Shop 2, 45 Kent Street, Cannington WA 6107</p>
+          </div>
         </div>
       </div>
       <div className="text-center text-white bg-darkPurple2 py-4">
-        &copy; Copyright 2023 PT Edukasi Talenta Indonesia.
+        &copy; Copyright 2023 IQRO FOUNDATION INC.
       </div>
     </footer>
   );
