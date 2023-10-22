@@ -18,7 +18,7 @@ export const webNavData: TWebNav[] = [
       },
       {
         title: "Iqro Centre Perth",
-        href: "about/iqrocentreperth",
+        href: "about/iqro-perth",
       },
     ],
   },
@@ -45,18 +45,34 @@ export const webNavData: TWebNav[] = [
         title: "Sport and Leisure",
         href: "program/sport-and-leisure",
       },
+      {
+        title: "Youth (YES)",
+        href: "program/youth-yes",
+      },
+      {
+        title: "TPA Salsabeela",
+        href: "program/tpa-salsabeela",
+      },
     ],
   },
   {
-    title: "NEWS",
+    title: "MEDIA",
     menu: [
       {
         title: "News",
-        href: "news/news",
+        href: "media/news",
       },
       {
-        title: "Media",
-        href: "news/media",
+        title: "Event",
+        href: "media/event",
+      },
+      {
+        title: "Blog",
+        href: "media/blog",
+      },
+      {
+        title: "Gallery",
+        href: "media/gallery",
       },
     ],
   },

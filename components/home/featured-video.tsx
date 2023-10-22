@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { BsArrowRight } from "react-icons/bs";
 import { useMaxChar } from "@/hooks/use-max-char";
 
-const Featured = () => {
+const FeaturedVideo = () => {
   const YoutubePlayer = dynamic(
     () => import("@/components/ui/youtube-player"),
     {
@@ -12,8 +12,7 @@ const Featured = () => {
     }
   );
 
-  const videoTitle =
-    "Meneladani Rumah Tangga Rasulullah - Pengajian Keluarga IQRO";
+  const videoTitle = "Kajian Keluarga - Menjadi Menantu Yang Disayang Mertua";
   const videoDesc =
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum molestias dolor quibusdam placeat perspiciatis sint architecto culpa libero, illo quod perferendis. illo quod perferendis illo quod perferendis";
   const videoDate = "24 Oct, 2023";
@@ -51,4 +50,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default FeaturedVideo;

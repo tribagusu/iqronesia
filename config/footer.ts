@@ -78,6 +78,11 @@ export const footerData = [
     title: "Media",
     items: [
       {
+        name: "News",
+        link: "media/news",
+        blank: false,
+      },
+      {
         name: "Event",
         link: "media/event",
         blank: false,

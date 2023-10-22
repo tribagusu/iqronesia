@@ -3,7 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { BsArrowRightShort, BsArrowRight } from "react-icons/bs";
 import { projectHighlight } from "@/config/project-highlight";
-import img1 from "@/public/images/iqro-perth.png";
+import { useMaxChar } from "@/hooks/use-max-char";
+import img1 from "@/public/images/iqro-perth-project.png";
 
 const ProjectHighlight = () => {
   return (
@@ -37,7 +38,7 @@ const ProjectHighlight = () => {
           <h3 className="text-2xl font-semibold mb-5">
             {projectHighlight.title}
           </h3>
-          <p>{projectHighlight.desc}</p>
+          <p>{useMaxChar(projectHighlight.desc, 1000)}</p>
           <div className="flex py-5 text-mustard font-medium">
             <Link
               href={projectHighlight.href}

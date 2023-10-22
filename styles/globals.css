@@ -14,6 +14,14 @@
   @apply translate-y-[-63%] sm:translate-y-[-57%]  md:translate-y-[-52%]  border-[#ddd];
 }
 
+.info {
+  @apply flex gap-[10px] justify-center items-center bg-white w-full my-auto text-center p-[1rem];
+}
+
+.web-nav {
+  @apply py-1 sticky z-40 top-0 text-center bg-white;
+}
+
 /* button */
 
 .btn {

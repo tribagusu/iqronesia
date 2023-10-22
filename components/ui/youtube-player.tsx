@@ -11,7 +11,7 @@ const YoutubePlayer = () => {
         height="100%"
         // className="react-player"
         controls={false}
-        url="https://www.youtube.com/watch?v=qjLCl_mrpNc"
+        url="https://www.youtube.com/watch?v=nl2Do5UIjLI"
       />
     </div>
   );

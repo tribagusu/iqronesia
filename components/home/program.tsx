@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { programsData } from "@/config/programs";
+import { useMaxChar } from "@/hooks/use-max-char";
 
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 
@@ -57,7 +58,7 @@ const Program = () => {
                     {program.category.toLocaleUpperCase()}
                   </small>
                   <h1 className="text-2xl mb-2 font-bold">{program.title}</h1>
-                  <p className="">{program.desc}</p>
+                  <p className="">{useMaxChar(program.desc, 200)}</p>
                   <div className="flex py-5 text-mustard font-medium">
                     <Link
                       href="/"

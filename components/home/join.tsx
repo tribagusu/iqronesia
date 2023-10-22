@@ -10,8 +10,7 @@ const Join = () => {
           join our community
         </h2>
         <p className="text-center text-base mb-2 mx-auto md:w-[70%] lg:w-[50%]">
-          You can make a difference! Join with our community to spread the
-          kindness and make impact!
+          Spread kindness and make an impact with our community!
         </p>
 
         <div className="flex justify-center mt-[2rem]">

@@ -62,6 +62,7 @@ const NavMenu: FC<NavMenuProps> = ({ nav, depthLevel }) => {
             menus={nav.menu}
             depthLevel={depthLevel}
             dropdown={dropdown}
+            setDropdown={setDropdown}
           />
         </>
       ) : (
