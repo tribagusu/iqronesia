@@ -11,23 +11,23 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const articles = await client.getEntries({ content_type: "blog" });
-  const article = articles?.items?.find(
-    (article) =>
-      article.fields.title.toString().toLowerCase().replaceAll(" ", "-") ===
-      params.slug
-  );
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { slug: string };
+// }) {
+//   const articles = await client.getEntries({ content_type: "blog" });
+//   const article = articles?.items?.find(
+//     (article) =>
+//       article.fields.title.toString().toLowerCase().replaceAll(" ", "-") ===
+//       params.slug
+//   );
 
-  return {
-    title: article.fields.title.toString(),
-    description: article.fields.author.toString(),
-  };
-}
+//   return {
+//     title: article.fields.title.toString(),
+//     description: article.fields.author.toString(),
+//   };
+// }
 
 const Article = async ({ params }: { params: { slug: string } }) => {
   const articles = await client.getEntries({ content_type: "blog" });

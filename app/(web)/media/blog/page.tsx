@@ -1,21 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
-import Image from "next/image";
-import { articlesData } from "@/config/articles";
-import { useMaxChar } from "@/hooks/use-max-char";
+
 import { client } from "@/lib/contentful";
 
-import { BsArrowRightShort } from "react-icons/bs";
-import img1 from "@/public/images/tech1.jpeg";
 import BlogCard from "@/components/blog/blog-card";
 
 async function getData() {
-  // const controller = new AbortController();
-  // const timeout = setTimeout(() => {
-  //   controller.abort();
-  // }, 5000);
-
   const res = await client.getEntries({ content_type: "blog" });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
@@ -24,8 +13,6 @@ async function getData() {
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
-
-  // clearTimeout(timeout);
   return res;
 }
 

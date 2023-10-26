@@ -21,9 +21,7 @@ const BlogCard = ({ blog }) => {
             className="w-full h-56 object-cover"
           />
           <div className="py-4 px-10 flex flex-col lg:h-36">
-            <h4 className=" text-lg font-semibold mb-3">
-              {useMaxChar(item.fields.title, 60)}
-            </h4>
+            <h4 className=" text-lg font-semibold mb-3">{item.fields.title}</h4>
             <div className="flex justify-between">
               <p>{item.fields.author}</p>
               <p>
