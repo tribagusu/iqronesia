@@ -58,7 +58,7 @@ const Program = () => {
                     {program.category.toLocaleUpperCase()}
                   </small>
                   <h1 className="text-2xl mb-2 font-bold">{program.title}</h1>
-                  <p className="">{useMaxChar(program.desc, 200)}</p>
+                  <p className="">{program.desc}</p>
                   <div className="flex py-5 text-mustard font-medium">
                     <Link
                       href="/"

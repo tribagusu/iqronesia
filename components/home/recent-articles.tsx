@@ -50,9 +50,7 @@ const RecentArticles = () => {
                   </small>
                   <small>{article.date}</small>
                 </div>
-                <h4 className="font-bold text-2xl mb-5">
-                  {useMaxChar(article.title, 55)}
-                </h4>
+                <h4 className="font-bold text-2xl mb-5">{article.title}</h4>
                 <div className="flex">
                   <Link
                     href={`/media/blog/${article.title

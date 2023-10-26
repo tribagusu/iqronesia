@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useMaxChar } from "@/hooks/use-max-char";
 import { BsArrowRightShort } from "react-icons/bs";
 import { DateTime } from "luxon";
 

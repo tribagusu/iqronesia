@@ -20,7 +20,7 @@ const Faq = () => {
             to improve Al Quran reading skill for its members. As the time goes
             by, there is a growing demand for a media to refresh our souls. This
             simple forum then further combined with contemporary Islamic
-            lectures to further strengthen its members' beliefs about the truth
+            lectures to further strengthen its members beliefs about the truth
             of Islam. Islam is truly a peaceful, compassionate and humane
             religion.
             <br />
