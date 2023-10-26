@@ -23,13 +23,18 @@ export const footerData = [
     title: "Project",
     items: [
       {
+        name: "Events",
+        link: "project/events",
+        blank: false,
+      },
+      {
         name: "Upgrading Masjid",
         link: "project/upgrading-masjid",
         blank: false,
       },
       {
-        name: "Iqro Perth Expansion",
-        link: "project/iqro-perth-expansion",
+        name: "Iqro Perth",
+        link: "project/iqro-perth",
         blank: false,
       },
     ],
@@ -83,13 +88,8 @@ export const footerData = [
         blank: false,
       },
       {
-        name: "Event",
-        link: "media/event",
-        blank: false,
-      },
-      {
         name: "Blog",
-        link: "media/event",
+        link: "media/blog",
         blank: false,
       },
       {

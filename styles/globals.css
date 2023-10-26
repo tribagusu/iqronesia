@@ -40,6 +40,10 @@
   @apply btn bg-green text-white hover:bg-darkGreen;
 }
 
+.btn-md-lightGreen {
+  @apply btn-md bg-lightGreen text-white hover:bg-green;
+}
+
 .btn-sm-green {
   @apply btn-sm bg-green text-white hover:bg-darkGreen;
 }

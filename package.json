@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.0",
+    "@contentful/rich-text-types": "^16.3.0",
+    "contentful": "^10.6.4",
+    "luxon": "^3.4.3",
     "next": "^13.5.4",
     "react": "latest",
     "react-collapse": "^5.1.1",
@@ -19,6 +23,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@types/luxon": "^3.3.3",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-collapse": "^5.0.2",

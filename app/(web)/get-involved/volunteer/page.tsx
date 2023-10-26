@@ -1,8 +1,8 @@
 import React from "react";
 import Underconstruction from "@/components/ui/underconstruction";
 
-const Contact = () => {
+const Volunteer = () => {
   return <Underconstruction />;
 };
 
-export default Contact;
+export default Volunteer;

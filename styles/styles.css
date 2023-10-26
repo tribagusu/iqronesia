@@ -17,6 +17,9 @@
   text-align: center;
   padding: 1rem 0;
 } */
+p {
+  white-space: pre-wrap;
+}
 
 .menus {
   display: flex;
@@ -94,6 +97,14 @@
   display: none;
   border-top: 1px solid #ededed;
   /* border: 1px solid #ededed; */
+}
+
+.dropdown li a {
+  border-bottom: 1px solid #ededed;
+}
+
+.dropdown li:last-child a {
+  border-bottom: none;
 }
 
 .dropdown::after {

@@ -2,14 +2,14 @@ import React from "react";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
-import { articles } from "@/config/articles";
+import { articlesData } from "@/config/articles";
 import { useMaxChar } from "@/hooks/use-max-char";
 
 import { BsArrowRightShort } from "react-icons/bs";
 import img1 from "@/public/images/tech1.jpeg";
 
 const RecentArticles = () => {
-  const filteredArticles = articles.filter((article, i) => i < 3);
+  const filteredArticles = articlesData.filter((article, i) => i < 3);
 
   return (
     <div className="container my-[5rem]">
@@ -31,7 +31,7 @@ const RecentArticles = () => {
 
       {/* articles */}
       <div className="flex flex-col md:flex-row w-full justify-between gap-5">
-        {articles
+        {articlesData
           ?.filter((item, i) => i < 3)
           .map((article) => (
             <div
@@ -55,7 +55,9 @@ const RecentArticles = () => {
                 </h4>
                 <div className="flex">
                   <Link
-                    href="/"
+                    href={`/media/blog/${article.title
+                      .toLowerCase()
+                      .replaceAll(" ", "-")}`}
                     className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 p-2 hover:underline text-mustard"
                   >
                     <span className="">Read more</span>

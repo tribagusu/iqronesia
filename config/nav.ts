@@ -16,9 +16,23 @@ export const webNavData: TWebNav[] = [
         title: "Contact",
         href: "about/contact",
       },
+    ],
+  },
+
+  {
+    title: "PROJECT",
+    menu: [
       {
-        title: "Iqro Centre Perth",
-        href: "about/iqro-perth",
+        title: "Events",
+        href: "project/events",
+      },
+      {
+        title: "Upgrading Masjid",
+        href: "project/upgrading-masjid",
+      },
+      {
+        title: "Iqro Perth",
+        href: "project/iqro-perth",
       },
     ],
   },
@@ -61,10 +75,6 @@ export const webNavData: TWebNav[] = [
       {
         title: "News",
         href: "media/news",
-      },
-      {
-        title: "Event",
-        href: "media/event",
       },
       {
         title: "Blog",
