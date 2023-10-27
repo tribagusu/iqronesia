@@ -13,7 +13,7 @@ type MobileMenuProps = {
   setShowNav: any;
 };
 
-const MobileMenu: FC<MobileMenuProps> = ({ nav, depthLevel }) => {
+const MobileMenu: FC<MobileMenuProps> = ({ nav, depthLevel, setShowNav }) => {
   const [dropdown, setDropdown] = useState(false);
 
   let ref = useRef<HTMLDivElement>(null);
@@ -54,6 +54,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ nav, depthLevel }) => {
             menus={nav.menu}
             depthLevel={depthLevel}
             dropdown={dropdown}
+            setShowNav={setShowNav}
           />
         </>
       ) : (

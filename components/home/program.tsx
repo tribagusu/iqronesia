@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { programsData } from "@/config/programs";
 import { useMaxChar } from "@/hooks/use-max-char";
+import { maxChar } from "../../utils/max-char";
 
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 
@@ -35,7 +36,10 @@ const Program = () => {
             ab.
           </p>
         </div>
-        <Link href="/" className="button-green smooth h-[2.5rem]">
+        <Link
+          href="/"
+          className="button-green smooth h-[2.5rem] mr-auto md:mr-0"
+        >
           View All{" "}
           <span>
             <BsArrowRight />
@@ -58,7 +62,7 @@ const Program = () => {
                     {program.category.toLocaleUpperCase()}
                   </small>
                   <h1 className="text-2xl mb-2 font-bold">{program.title}</h1>
-                  <p className="">{program.desc}</p>
+                  <p className="">{maxChar(program.desc, 300)}</p>
                   <div className="flex py-5 text-mustard font-medium">
                     <Link
                       href="/"

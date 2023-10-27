@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import { articlesData } from "@/config/articles";
-import { useMaxChar } from "@/hooks/use-max-char";
+import { maxChar } from "../../utils/max-char";
 
 import { BsArrowRightShort } from "react-icons/bs";
 import img1 from "@/public/images/tech1.jpeg";
@@ -21,7 +21,10 @@ const RecentArticles = () => {
             ab.
           </p>
         </div>
-        <Link href="/media/blog" className="button-green smooth h-[2.5rem]">
+        <Link
+          href="/media/blog"
+          className="button-green smooth h-[2.5rem] mr-auto md:mr-0"
+        >
           View All{" "}
           <span>
             <BsArrowRight />
@@ -36,7 +39,7 @@ const RecentArticles = () => {
           .map((article) => (
             <div
               key={article.id}
-              className="flex flex-col relative bg-black h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
+              className="flex flex-col relative bg-black h-[300px] md:h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
             >
               <Image
                 src={img1}
@@ -50,7 +53,9 @@ const RecentArticles = () => {
                   </small>
                   <small>{article.date}</small>
                 </div>
-                <h4 className="font-bold text-2xl mb-5">{article.title}</h4>
+                <h4 className="font-bold text-2xl mb-5">
+                  {maxChar(article.title, 60)}
+                </h4>
                 <div className="flex">
                   <Link
                     href={`/media/blog/${article.title

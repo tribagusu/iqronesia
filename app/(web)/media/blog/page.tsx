@@ -18,7 +18,6 @@ async function getData() {
 
 const Blog = async () => {
   const blog = await getData();
-  console.log(blog);
 
   return (
     <div className="container my-20">
