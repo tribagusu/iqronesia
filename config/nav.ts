@@ -80,10 +80,6 @@ export const webNavData: TWebNav[] = [
         title: "Blog",
         href: "media/blog",
       },
-      {
-        title: "Gallery",
-        href: "media/gallery",
-      },
     ],
   },
   {

@@ -8,20 +8,23 @@ const BlogCard = ({ blog }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {blog?.items?.map((item, i) => (
-        <div
+        <Link
           key={i}
-          className="bg-white rounded-xl overflow-hidden shadow-md relative"
+          href={`/media/blog/${item.fields.title
+            .toLowerCase()
+            .replaceAll(" ", "-")}`}
+          className="bg-white rounded-xl overflow-hidden shadow-md relative hover:shadow-lg"
         >
           <Image
             src={`https:${item.fields.thumbnail.fields.file.url}`}
             width={item.fields.thumbnail.fields.file.details.image.width}
             height={item.fields.thumbnail.fields.file.details.image.height}
             alt="foto"
-            className="w-full h-56 object-cover"
+            className="w-full h-56 object-cover w"
           />
-          <div className="py-4 px-10 flex flex-col lg:h-36">
+          <div className="py-4 mb-3 px-10 flex flex-col lg:h-36">
             <h4 className=" text-lg font-semibold mb-3">{item.fields.title}</h4>
-            <div className="flex justify-between">
+            <div className="flex flex-col justify-between ">
               <p>{item.fields.author}</p>
               <p>
                 {DateTime.fromISO(
@@ -30,7 +33,7 @@ const BlogCard = ({ blog }) => {
               </p>
             </div>
           </div>
-          <div className="flex py-5 md:py-8 px-10 text-darkGreen">
+          {/* <div className="flex py-5 md:py-8 px-10 text-darkGreen">
             <Link
               href={`/media/blog/${item.fields.title
                 .toLowerCase()
@@ -42,8 +45,8 @@ const BlogCard = ({ blog }) => {
                 <BsArrowRightShort />
               </span>
             </Link>
-          </div>
-        </div>
+          </div> */}
+        </Link>
       ))}
     </div>
   );

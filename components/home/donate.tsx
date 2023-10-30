@@ -16,7 +16,7 @@ const Donate = () => {
           <strong>Hadith 6264, Book 32, Muslim</strong>
         </p>
         <Link
-          href="/"
+          href="/get-involved/donation"
           className="pill-md uppercase bg-mustard hover:bg-[#9c8743] font-medium shadow-sm smooth"
         >
           donate

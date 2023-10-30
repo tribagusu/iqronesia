@@ -2,14 +2,30 @@ import React from "react";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
-import { articlesData } from "@/config/articles";
 import { maxChar } from "../../utils/max-char";
-
+import { client } from "@/lib/contentful";
+import { DateTime } from "luxon";
 import { BsArrowRightShort } from "react-icons/bs";
-import img1 from "@/public/images/tech1.jpeg";
 
-const RecentArticles = () => {
-  const filteredArticles = articlesData.filter((article, i) => i < 3);
+async function getData() {
+  const res = await client.getEntries({ content_type: "blog" });
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+
+  if (res.errors) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error("Failed to fetch data");
+  }
+  return res;
+}
+
+const RecentArticles = async () => {
+  const blog = await getData();
+  const sortedArticle = blog?.items.sort(
+    (a, b) =>
+      DateTime.fromISO(b.fields.created_at.toLocaleString()).toMillis() -
+      DateTime.fromISO(a.fields.created_at.toLocaleString()).toMillis()
+  );
 
   return (
     <div className="container my-[5rem]">
@@ -34,31 +50,47 @@ const RecentArticles = () => {
 
       {/* articles */}
       <div className="flex flex-col md:flex-row w-full justify-between gap-5">
-        {articlesData
-          ?.filter((item, i) => i < 3)
-          .map((article) => (
+        {sortedArticle
+          .filter((item, i) => i < 3)
+          .map((article, i) => (
             <div
-              key={article.id}
+              key={i}
               className="flex flex-col relative bg-black h-[300px] md:h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
             >
-              <Image
+              {/* <Image
                 src={img1}
                 alt="image"
+                className="object-cover w-full h-[30rem] opacity-60 transition ease-in-out duration-500 hover:scale-105"
+              /> */}
+              <Image
+                src={`https:${article.fields.thumbnail["fields"].file.url}`}
+                width={
+                  article.fields.thumbnail["fields"].file.details.image.width
+                }
+                height={
+                  article.fields.thumbnail["fields"].file.details.image.height
+                }
+                alt="foto"
                 className="object-cover w-full h-[30rem] opacity-60 transition ease-in-out duration-500 hover:scale-105"
               />
               <div className="absolute left-0 bottom-0 text-white px-5 mb-5">
                 <div className="flex items-center justify-between ">
                   <small className="pill px-2 mb-3 bg-mustard">
-                    {article.author}
+                    {article?.fields?.author.toLocaleString()}
                   </small>
-                  <small>{article.date}</small>
+                  <small>
+                    {DateTime.fromISO(
+                      article?.fields?.created_at.toLocaleString()
+                    ).toFormat("DD")}
+                  </small>
                 </div>
                 <h4 className="font-bold text-2xl mb-5">
-                  {maxChar(article.title, 60)}
+                  {maxChar(article?.fields?.title.toLocaleString(), 60)}
                 </h4>
                 <div className="flex">
                   <Link
-                    href={`/media/blog/${article.title
+                    href={`/media/blog/${article?.fields?.title
+                      .toLocaleString()
                       .toLowerCase()
                       .replaceAll(" ", "-")}`}
                     className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 p-2 hover:underline text-mustard"

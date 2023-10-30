@@ -33,7 +33,7 @@ const WebNav = () => {
           <p className="text-center">You can make a difference!</p>
           <span className="flex items-center gap-1">
             <p>Support our community by</p>
-            <Link href="#" target="_blank" className="btn-sm-green">
+            <Link href="/get-involved/donation" className="btn-sm-green">
               Donate
             </Link>
           </span>
