@@ -2,7 +2,7 @@ import { type TWebNav, TDropdownMenu, TMenu } from "@/lib/types";
 
 export const webNavData: TWebNav[] = [
   {
-    title: "ABOUT",
+    title: "About",
     menu: [
       {
         title: "History",
@@ -20,7 +20,7 @@ export const webNavData: TWebNav[] = [
   },
 
   {
-    title: "PROJECT",
+    title: "Project",
     menu: [
       {
         title: "Events",
@@ -37,7 +37,7 @@ export const webNavData: TWebNav[] = [
     ],
   },
   {
-    title: "PROGRAM",
+    title: "Program",
     menu: [
       {
         title: "Da'wah",
@@ -53,11 +53,11 @@ export const webNavData: TWebNav[] = [
       },
       {
         title: "Social and Welfare",
-        href: "program/social-and-welfare",
+        href: "program/social-welfare",
       },
       {
         title: "Sport and Leisure",
-        href: "program/sport-and-leisure",
+        href: "program/sport-leisure",
       },
       {
         title: "Youth (YES)",
@@ -70,20 +70,20 @@ export const webNavData: TWebNav[] = [
     ],
   },
   {
-    title: "MEDIA",
+    title: "Media",
     menu: [
-      {
-        title: "News",
-        href: "media/news",
-      },
       {
         title: "Blog",
         href: "media/blog",
       },
+      {
+        title: "News",
+        href: "media/news",
+      },
     ],
   },
   {
-    title: "GET INVOLVED",
+    title: "Get Involved",
     menu: [
       {
         title: "Donation",

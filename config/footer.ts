@@ -59,12 +59,12 @@ export const footerData = [
       },
       {
         name: "Social and Welfare",
-        link: "program/social-and-welfare",
+        link: "program/social-welfare",
         blank: false,
       },
       {
         name: "Sports and Leisure",
-        link: "program/sports-and-leisure",
+        link: "program/sports-leisure",
         blank: false,
       },
       {
@@ -83,13 +83,13 @@ export const footerData = [
     title: "Media",
     items: [
       {
-        name: "News",
-        link: "media/news",
+        name: "Blog",
+        link: "media/blog",
         blank: false,
       },
       {
-        name: "Blog",
-        link: "media/blog",
+        name: "News",
+        link: "media/news",
         blank: false,
       },
       {

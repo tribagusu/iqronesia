@@ -30,7 +30,7 @@ const ProjectHighlight = () => {
 
       {/* project goes here */}
       <div className="flex flex-col md:flex-row justify-between gap-10">
-        <div className="md:w-[50%] min-h-80 relative overflow-hidden rounded shadow-md">
+        <div className="md:w-[50%] min-h-80 relative overflow-hidden rounded shadow">
           <Image
             src={img1}
             alt="image"

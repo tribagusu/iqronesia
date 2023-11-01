@@ -53,7 +53,7 @@ const Program = () => {
         {programsData.map((program, i) => (
           <div
             key={i}
-            className="flex flex-col w-full md:min-h-70 overflow-hidden relative rounded-2xl shadow-md"
+            className="flex flex-col w-full md:min-h-70 overflow-hidden relative rounded-2xl shadow"
           >
             <div className="flex flex-col md:flex-row w-full">
               <div className="flex flex-col bg-[#f7f5ed] md:w-[50%] p-10">

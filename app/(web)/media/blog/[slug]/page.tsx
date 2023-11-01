@@ -42,18 +42,18 @@ const Article = async ({ params }: { params: { slug: string } }) => {
   return (
     <div className="container my-10">
       <div className="flex flex-col md:w-[60%] m-auto">
-        <h1 className="text-2xl font-bold mb-2">
+        <h1 className="text-lg md:text-4xl font-bold mb-5">
           {article?.fields?.title.toLocaleString()}
         </h1>
-        <small className="text-sm">
+        <small className="text-sm text-gray-500">
           {DateTime.fromISO(
             article?.fields?.created_at.toLocaleString()
           ).toFormat("DD")}
         </small>
-        <small className="text-sm">
+        <small className="text-sm text-gray-500">
           Posted by <strong>{article?.fields?.author.toLocaleString()}</strong>
         </small>
-        <div className="mt-5">
+        <div className="mt-10">
           <RichText content={article.fields.article} />
         </div>
       </div>

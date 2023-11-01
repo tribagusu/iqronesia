@@ -19,7 +19,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1260px",
+        "2xl": "1200px",
       },
       fontFamily: {
         sans: ["ui-sans-serif", "system-ui"],

@@ -19,7 +19,7 @@ const FeaturedVideo = () => {
 
   return (
     <div className="container my-[6rem]">
-      <div className="flex flex-col md:flex-row rounded-xl shadow-lg overflow-hidden border w-full">
+      <div className="flex flex-col md:flex-row rounded-xl shadow overflow-hidden border w-full">
         <YoutubePlayer />
 
         <div className="flex flex-col justify-between p-10 md:w-[50%]">

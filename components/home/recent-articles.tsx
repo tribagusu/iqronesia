@@ -55,7 +55,7 @@ const RecentArticles = async () => {
           .map((article, i) => (
             <div
               key={i}
-              className="flex flex-col relative bg-black h-[300px] md:h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow-xl"
+              className="flex flex-col relative bg-black h-[300px] md:h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow"
             >
               {/* <Image
                 src={img1}
@@ -71,7 +71,7 @@ const RecentArticles = async () => {
                   article.fields.thumbnail["fields"].file.details.image.height
                 }
                 alt="foto"
-                className="object-cover w-full h-[30rem] opacity-60 transition ease-in-out duration-500 hover:scale-105"
+                className="object-cover w-full h-[30rem] transition ease-in-out duration-500 hover:scale-105 opacity-60"
               />
               <div className="absolute left-0 bottom-0 text-white px-5 mb-5">
                 <div className="flex items-center justify-between ">
@@ -93,7 +93,7 @@ const RecentArticles = async () => {
                       .toLocaleString()
                       .toLowerCase()
                       .replaceAll(" ", "-")}`}
-                    className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 p-2 hover:underline text-mustard"
+                    className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 p-2 hover:underline text-white"
                   >
                     <span className="">Read more</span>
                     <span className="text-lg scale-x-150">
