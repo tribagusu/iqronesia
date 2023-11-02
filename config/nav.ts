@@ -1,4 +1,4 @@
-import { type TWebNav, TDropdownMenu, TMenu } from "@/lib/types";
+import { type TWebNav } from "@/lib/types";
 
 export const webNavData: TWebNav[] = [
   {

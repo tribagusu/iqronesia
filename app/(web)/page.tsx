@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Hotline />
+      {/* <Hotline /> */}
       <FeaturedVideo />
       <RecentArticles />
       <Program />

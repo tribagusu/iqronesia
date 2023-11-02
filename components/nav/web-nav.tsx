@@ -42,6 +42,7 @@ const WebNav = () => {
       <header className="web-nav">
         <div className="container flex justify-between items-center">
           <div className="flex">
+            {/* ========== logo ========== */}
             <Link
               href="/"
               className="block px-3 mr-5"
@@ -53,6 +54,8 @@ const WebNav = () => {
                 className="w-auto h-[40px] md:h-[45px]"
               />
             </Link>
+
+            {/* ========== nav menu ========== */}
             {webNavData?.length ? (
               <nav className="hidden md:flex relative ">
                 {webNavData?.map((nav, index) => {
@@ -65,6 +68,7 @@ const WebNav = () => {
             ) : null}
           </div>
 
+          {/* ========== hamburger ========== */}
           <div className="bg-transparent w-10 h-10 flex justify-center items-center">
             <button
               className="text-darkGreen text-[1.6rem] p-2 md:hidden"
@@ -74,15 +78,18 @@ const WebNav = () => {
             </button>
           </div>
 
+          {/* ========== hotline ========== */}
           <div className="hidden md:flex">
-            <span className="py-2 px-4 border border-green rounded-s">
+            <span className="py-2 px-4 border border-darkGreen rounded-s font-bold">
               +61 422 466 165
             </span>
-            <span className="bg-green text-white py-2 px-3 rounded-e">
+            <span className="bg-darkGreen text-white py-2 px-3 rounded-e font-bold">
               HOTLINE
             </span>
           </div>
         </div>
+
+        {/* ========== mobile nav ========== */}
         <div className="container">
           {showNav && (
             <nav className="flex flex-col w-full h-screen cursor-pointer py-3 px-5 bg-white absolute left-0">

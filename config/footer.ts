@@ -94,8 +94,13 @@ export const footerData = [
       },
       {
         name: "Gallery",
-        link: "media/gallery",
-        blank: false,
+        link: "https://www.facebook.com/iqrofans/photos",
+        blank: true,
+      },
+      {
+        name: "Live Video",
+        link: "https://www.youtube.com/@IQROChannel/streams",
+        blank: true,
       },
     ],
   },
