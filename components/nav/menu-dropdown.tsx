@@ -25,7 +25,7 @@ const MenuDropdown: React.FC<DropdownProps> = ({
           <Link
             onClick={() => setDropdown(false)}
             href={`/${menu.href}`}
-            className="min-w-[150px]"
+            className="min-w-[120px]"
           >
             {menu.title}
           </Link>

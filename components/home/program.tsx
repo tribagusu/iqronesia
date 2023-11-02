@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { programsData } from "@/config/programs";
-import { useMaxChar } from "@/hooks/use-max-char";
 import { maxChar } from "../../utils/max-char";
 
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
@@ -37,7 +36,7 @@ const Program = () => {
           </p>
         </div>
         <Link
-          href="/"
+          href="/program"
           className="button-green smooth h-[2.5rem] mr-auto md:mr-0"
         >
           View All{" "}

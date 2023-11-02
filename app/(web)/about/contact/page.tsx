@@ -7,6 +7,8 @@ import { contactData } from "@/config/contact";
 import img1 from "@/public/images/iqro-masjid.jpeg";
 import { MdMapsHomeWork } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoMail } from "react-icons/io5";
+import { BiSolidTimeFive } from "react-icons/bi";
 
 const Contact = () => {
   return (
@@ -30,30 +32,40 @@ const Contact = () => {
             <div className="py-4 mb-3 px-10 flex flex-col">
               <h4 className=" text-lg font-semibold mb-3">{item.name}</h4>
               <ul className="flex flex-col justify-between gap-2">
-                <li className="flex gap-4">
-                  <span className="text-lg">
+                <li className="flex gap-4 text-blue-700">
+                  <span className="text-lg pt-1">
                     <MdMapsHomeWork />
                   </span>
                   <Link
                     href={item.maps}
                     target="_blank"
-                    className="hover:text-blue-700"
+                    className="text-blue-700 hover:underline"
                   >
                     {item.address}
                   </Link>
                 </li>
-                <li className="flex gap-4">
+                <li className="flex gap-4 items-center">
                   <span className="text-lg">
                     <BsFillTelephoneFill />
                   </span>
                   <span>{item.phone}</span>
                 </li>
-                <li>{item.email}</li>
-                <li>{item.open_hours}</li>
+                <li className="flex gap-4 items-center">
+                  <span className="text-lg">
+                    <IoMail />
+                  </span>
+                  <span>{item.email}</span>
+                </li>
+                <li className="flex gap-4 items-center">
+                  <span className="text-lg">
+                    <BiSolidTimeFive />
+                  </span>
+                  <span>{item.open_hours}</span>
+                </li>
               </ul>
               <Link
                 href={item.href}
-                className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 text-green mt-3"
+                className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300 text-green mt-5"
               >
                 <span className="hover:underline">Go to {item.name}</span>
                 <span className="text-lg scale-x-150">

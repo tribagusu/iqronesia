@@ -29,29 +29,16 @@ const BlogCard = ({ blog }) => {
             className="w-full h-56 object-cover w"
           />
           <div className="py-4 mb-3 px-10 flex flex-col lg:h-36">
-            <h4 className=" text-lg font-semibold mb-3">{item.fields.title}</h4>
+            <h4 className=" text-lg font-semibold mb-5">{item.fields.title}</h4>
             <div className="flex flex-col justify-between ">
-              <p className="text-gray-500">{item.fields.author}</p>
-              <p className="text-gray-500">
+              <p className="text-gray-500 text-sm mb-1">
                 {DateTime.fromISO(
                   item?.fields?.created_at.toLocaleString()
                 ).toFormat("DD")}
               </p>
+              <p className="text-gray-500 text-sm">{item.fields.author}</p>
             </div>
           </div>
-          {/* <div className="flex py-5 md:py-8 px-10 text-darkGreen">
-            <Link
-              href={`/media/blog/${item.fields.title
-                .toLowerCase()
-                .replaceAll(" ", "-")}`}
-              className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300"
-            >
-              <span className="hover:underline">Read more</span>
-              <span className="text-lg scale-x-150">
-                <BsArrowRightShort />
-              </span>
-            </Link>
-          </div> */}
         </Link>
       ))}
     </div>

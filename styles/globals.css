@@ -11,15 +11,15 @@
 }
 
 .web-header.info--hidden {
-  @apply translate-y-[-63%] sm:translate-y-[-57%]  md:translate-y-[-52%]  border-[#ddd];
+  @apply translate-y-[-56%] sm:translate-y-[-55%]  md:translate-y-[-40%]  border-[#ddd];
 }
 
 .info {
-  @apply flex gap-[10px] justify-center items-center bg-white w-full my-auto text-center p-[1rem];
+  @apply flex gap-[10px] justify-center items-center bg-white w-full my-auto text-center px-4 pt-4;
 }
 
 .web-nav {
-  @apply py-1 sticky z-40 top-0 text-center bg-white;
+  @apply py-3 sticky z-40 top-0 text-center bg-white;
 }
 
 /* button */
@@ -44,8 +44,16 @@
   @apply btn-md bg-lightGreen text-white hover:bg-green;
 }
 
+.btn-sm-lightGreen {
+  @apply btn-sm bg-lightGreen text-white hover:bg-green;
+}
+
 .btn-sm-green {
   @apply btn-sm bg-green text-white hover:bg-darkGreen;
+}
+
+.btn-sm-mustard {
+  @apply btn-sm bg-mustard text-white hover:bg-darkGreen;
 }
 
 /* dropdown */

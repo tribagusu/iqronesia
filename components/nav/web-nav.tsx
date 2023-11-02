@@ -33,7 +33,7 @@ const WebNav = () => {
           <p className="text-center">You can make a difference!</p>
           <span className="flex items-center gap-1">
             <p>Support our community by</p>
-            <Link href="/get-involved/donation" className="btn-sm-green">
+            <Link href="/get-involved/donation" className="btn-sm-lightGreen">
               Donate
             </Link>
           </span>
@@ -41,27 +41,29 @@ const WebNav = () => {
       )}
       <header className="web-nav">
         <div className="container flex justify-between items-center">
-          <Link
-            href="/"
-            className="block px-2"
-            onClick={() => setShowNav(false)}
-          >
-            <Image
-              src={logo}
-              alt="iqro"
-              className="w-auto h-[35px] md:h-[45px]"
-            />
-          </Link>
-          {webNavData?.length ? (
-            <nav className="hidden md:flex relative ">
-              {webNavData?.map((nav, index) => {
-                const depthLevel = 0;
-                return (
-                  <NavMenu nav={nav} key={index} depthLevel={depthLevel} />
-                );
-              })}
-            </nav>
-          ) : null}
+          <div className="flex">
+            <Link
+              href="/"
+              className="block px-3 mr-5"
+              onClick={() => setShowNav(false)}
+            >
+              <Image
+                src={logo}
+                alt="iqro"
+                className="w-auto h-[40px] md:h-[45px]"
+              />
+            </Link>
+            {webNavData?.length ? (
+              <nav className="hidden md:flex relative ">
+                {webNavData?.map((nav, index) => {
+                  const depthLevel = 0;
+                  return (
+                    <NavMenu nav={nav} key={index} depthLevel={depthLevel} />
+                  );
+                })}
+              </nav>
+            ) : null}
+          </div>
 
           <div className="bg-transparent w-10 h-10 flex justify-center items-center">
             <button
@@ -71,10 +73,19 @@ const WebNav = () => {
               {showNav ? <AiOutlineClose /> : <FiMenu />}
             </button>
           </div>
+
+          <div className="hidden md:flex">
+            <span className="py-2 px-4 border border-green rounded-s">
+              +61 422 466 165
+            </span>
+            <span className="bg-green text-white py-2 px-3 rounded-e">
+              HOTLINE
+            </span>
+          </div>
         </div>
         <div className="container">
           {showNav && (
-            <nav className="flex flex-col w-full cursor-pointer py-3 px-5 bg-white absolute left-0">
+            <nav className="flex flex-col w-full h-screen cursor-pointer py-3 px-5 bg-white absolute left-0">
               {webNavData?.map((nav, index) => (
                 <MobileMenu
                   nav={nav}
