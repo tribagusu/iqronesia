@@ -27,7 +27,7 @@ const MenuDropdown: React.FC<DropdownProps> = ({
             key={index}
             onClick={() => setDropdown(false)}
             href={`/${menu.href}`}
-            className="flex flex-col"
+            className="flex flex-col hover:shadow"
           >
             <span className="flex items-center gap-2 text-lg text-black font-bold mb-2 ">
               {menu.title}{" "}

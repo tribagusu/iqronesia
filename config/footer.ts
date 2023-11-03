@@ -23,11 +23,6 @@ export const footerData = [
     title: "Project",
     items: [
       {
-        name: "Events",
-        link: "project/events",
-        blank: false,
-      },
-      {
         name: "Upgrading Masjid",
         link: "project/upgrading-masjid",
         blank: false,
@@ -105,8 +100,13 @@ export const footerData = [
     ],
   },
   {
-    title: "Get Involved",
+    title: "More",
     items: [
+      {
+        name: "Event",
+        link: "event",
+        blank: false,
+      },
       {
         name: "Donation",
         link: "get-involved/donation",

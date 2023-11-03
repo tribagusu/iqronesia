@@ -6,15 +6,15 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "History",
-        href: "about/history",
+        href: "history",
       },
       {
         title: "Organisation",
-        href: "about/organisation",
+        href: "organisation",
       },
       {
         title: "Contact",
-        href: "about/contact",
+        href: "contact",
       },
     ],
   },
@@ -91,11 +91,11 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "Blog",
-        href: "media/blog",
+        href: "blog",
       },
       {
         title: "News",
-        href: "media/news",
+        href: "news",
       },
     ],
   },
@@ -104,11 +104,11 @@ export const webNavData: TWebNav[] = [
     menu: [
       {
         title: "Donation",
-        href: "get-involved/donation",
+        href: "donation",
       },
       {
         title: "Volunteer",
-        href: "get-involved/volunteer",
+        href: "volunteer",
       },
     ],
   },

@@ -21,7 +21,7 @@ const ProjectHighlight = () => {
           href="project"
           className="button-green smooth h-[2.5rem] mr-auto md:mr-0"
         >
-          View All{" "}
+          View All Project{" "}
           <span>
             <BsArrowRight />
           </span>

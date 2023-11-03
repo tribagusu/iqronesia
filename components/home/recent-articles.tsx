@@ -38,10 +38,10 @@ const RecentArticles = async () => {
           </p>
         </div>
         <Link
-          href="/media/blog"
+          href="/blog"
           className="button-green smooth h-[2.5rem] mr-auto md:mr-0"
         >
-          View All{" "}
+          View All Articles{" "}
           <span>
             <BsArrowRight />
           </span>

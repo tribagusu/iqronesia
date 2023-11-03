@@ -39,7 +39,7 @@ const Program = () => {
           href="/program"
           className="button-green smooth h-[2.5rem] mr-auto md:mr-0"
         >
-          View All{" "}
+          View All Program{" "}
           <span>
             <BsArrowRight />
           </span>
@@ -52,7 +52,7 @@ const Program = () => {
         {programsData.map((program, i) => (
           <div
             key={i}
-            className="flex flex-col w-full md:min-h-70 overflow-hidden relative rounded-2xl shadow"
+            className="flex flex-col w-full md:min-h-70 overflow-hidden relative rounded shadow"
           >
             <div className="flex flex-col md:flex-row w-full">
               <div className="flex flex-col bg-[#f7f5ed] md:w-[50%] p-10">
