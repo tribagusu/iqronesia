@@ -11,8 +11,8 @@ const Department = ({ department }) => {
   );
 
   return (
-    <div className=" mb-10 w-full gap-5">
-      <ul className="tab-head">
+    <div className="w-full gap-5">
+      <ul className="tab-head ml-5 md:ml-0">
         {sortedDepartment?.map((program, index) => (
           <li
             key={index}

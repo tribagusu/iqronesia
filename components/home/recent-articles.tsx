@@ -55,7 +55,7 @@ const RecentArticles = async () => {
           .map((article, i) => (
             <div
               key={i}
-              className="flex flex-col relative bg-black h-[300px] md:h-[450px] md:w-[33%] overflow-hidden rounded-2xl shadow"
+              className="flex flex-col relative bg-black h-[300px] md:w-[33%] overflow-hidden rounded-2xl shadow"
             >
               {/* <Image
                 src={img1}
@@ -89,7 +89,7 @@ const RecentArticles = async () => {
                 </h4>
                 <div className="flex">
                   <Link
-                    href={`/media/blog/${article?.fields?.title
+                    href={`/blog/${article?.fields?.title
                       .toLocaleString()
                       .toLowerCase()
                       .replaceAll(" ", "-")}`}

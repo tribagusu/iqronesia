@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { client } from "@/lib/contentful";
-import ProgramCard from "@/components/program/program-card";
 import Department from "@/components/program/department";
 
 async function getData() {
@@ -11,23 +10,23 @@ async function getData() {
   return res;
 }
 
-const Program = async () => {
+const ProgramPage = async () => {
   const department = await getData();
 
-  console.log("program", department);
+  // console.log("program", department);
 
   return (
-    <div className="container my-20">
+    <div className="container my-16">
       <h1 className="text-4xl font-bold mb-2">Program</h1>
       <p className="text-lg mb-10">
         Discover various tips and information that will help you become a better
         Muslim.
       </p>
-      {/* ========== program ========== */}
+
+      {/* ========== department ========== */}
       <Department department={department.items} />
-      {/* <ProgramCard programs={department.items} /> */}
     </div>
   );
 };
 
-export default Program;
+export default ProgramPage;

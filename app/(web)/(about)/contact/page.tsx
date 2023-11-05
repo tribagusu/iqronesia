@@ -12,7 +12,7 @@ import { BiSolidTimeFive } from "react-icons/bi";
 
 const Contact = () => {
   return (
-    <div className="container my-20 flex flex-col">
+    <div className="container my-16 flex flex-col">
       <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
       <p className="text-lg mb-10">
         Need help or have any feedback for us? Please contact us through these

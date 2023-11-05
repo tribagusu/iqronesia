@@ -24,8 +24,8 @@ p {
 }
 
 .menu-items button:hover {
-  background-color: rgba(44, 88, 54, 0.143);
-  color: #34623f;
+  /* background-color: rgba(44, 88, 54, 0.143); */
+  color: #607744;
   border-radius: 0.2em;
 }
 
@@ -127,9 +127,8 @@ p {
 .tab-head {
   display: flex;
   gap: 10px;
-  /* overflow: auto; */
-  overflow-x: auto;
-  overflow-y: hidden;
+  margin-bottom: 2rem;
+  overflow: auto;
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
@@ -138,32 +137,20 @@ p {
 .tab-head li {
   font-weight: 600;
   gap: 10px;
-  padding: 7px 17px;
+  padding: 10px 20px;
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .tab-active {
-  background-color: #607744;
-  color: white;
-  border: 1px solid #607744 !important;
+  background-color: #e8efdd;
+  color: #34623f;
+  border: 1px solid #34623f !important;
 }
 
 .tab-panels {
   display: flex;
   width: 100%;
-}
-
-.panel-selected {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-  background-color: pink;
-  width: 100%;
-}
-
-.panel-not-selected {
-  display: none;
 }
 
 /* _react slick */

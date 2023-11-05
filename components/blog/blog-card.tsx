@@ -15,9 +15,7 @@ const BlogCard = ({ blog }) => {
       {sortedArticle?.map((item, i) => (
         <Link
           key={i}
-          href={`/media/blog/${item.fields.title
-            .toLowerCase()
-            .replaceAll(" ", "-")}`}
+          href={`/blog/${item.fields.title.toLowerCase().replaceAll(" ", "-")}`}
           className="bg-white rounded-xl "
         >
           <Image

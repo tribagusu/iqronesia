@@ -8,10 +8,20 @@ const ProgramCard = ({ programs, selected }) => {
       {programs?.map((item, index) => (
         <div
           key={index}
-          className={`${selected === index ? "panel-selected" : "hidden"}`}
+          className={`${
+            selected === index
+              ? "grid grid-cols-1 md:grid-cols-3 gap-8 w-full"
+              : "hidden"
+          }`}
         >
           {item.fields.programs.map((program, index) => (
-            <Link key={index} href="/" className="flex w-full flex-col">
+            <Link
+              key={index}
+              href={`/program/${program.fields.title
+                .toLowerCase()
+                .replaceAll(" ", "-")}`}
+              className="flex w-full flex-col"
+            >
               <Image
                 src={`https:${program.fields.image.fields.file.url}`}
                 width={program.fields.image.fields.file.details.image.width}
@@ -19,9 +29,9 @@ const ProgramCard = ({ programs, selected }) => {
                 alt="foto"
                 className="w-full h-56 object-cover  rounded-xl"
               />
-              <p className="mt-5 text-sm mb-1 pill bg-green text-white">
+              <h4 className="text-lg font-semibold mt-5 mb-1">
                 {program?.fields?.title}
-              </p>
+              </h4>
             </Link>
           ))}
         </div>
