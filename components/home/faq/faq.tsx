@@ -25,15 +25,12 @@ const Faq = () => {
             religion.
             <br />
             <br />
-            With this belief members are further encouraged to offer
-            contribution to the society by sharing the noble values taught in
-            Islam. This idea takes form in Al Quran reading courses, and Islamic
-            teaching classes for children. To establish its existence in view to
-            sustain the services offered to the society, members are agreed to
-            formalise this organisation further. Under the name of IQRO
-            Foundation, this organisation formally listed in Australia in 2000
-            as a non profit community organisation, with members primarily came
-            from Indonesian Muslim background.
+            To establish its existence in view to sustain the services offered
+            to the society, members are agreed to formalise this organisation
+            further. Under the name of IQRO Foundation, this organisation
+            formally listed in Australia in 2000 as a non profit community
+            organisation, with members primarily came from Indonesian Muslim
+            background.
           </p>
         </div>
         <div className="md:min-w-[60%]">

@@ -28,11 +28,11 @@ const AccordionSection: FC<AccordionProps> = ({
     setActiveIndex(nextIndex);
   };
   return (
-    <div className=" flex flex-col rounded-md border border-gray-300 ">
+    <div className=" flex flex-col rounded border border-gray-300 ">
       <div
         onClick={() => toggleSection()}
         className={`flex items-center cursor-pointer p-5
-        rounded-md
+        rounded
        `}
       >
         <h3 className="font-bold">{section.question}</h3>
@@ -46,7 +46,7 @@ const AccordionSection: FC<AccordionProps> = ({
       </div>
 
       <Collapse isOpened={isActiveSection}>
-        <div className="pl-5 pr-[3rem] md:pr-[5rem] pb-5 rounded-b-lg">
+        <div className="pl-5 pr-[3rem] md:pr-[5rem] pb-5 rounded-b">
           <p className="">{section.answer}</p>
         </div>
       </Collapse>

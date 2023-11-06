@@ -30,8 +30,8 @@ export const webNavData: TWebNav[] = [
         href: "project",
       },
       {
-        title: "Events",
-        href: "events",
+        title: "Event",
+        href: "event",
       },
     ],
   },

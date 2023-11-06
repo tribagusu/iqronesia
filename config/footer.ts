@@ -4,17 +4,17 @@ export const footerData = [
     items: [
       {
         name: "History",
-        link: "about/history",
+        link: "/history",
         blank: false,
       },
       {
         name: "Organisation",
-        link: "about/organisation",
+        link: "/organisation",
         blank: false,
       },
       {
         name: "Contact",
-        link: "about/contact",
+        link: "/contact",
         blank: false,
       },
     ],
@@ -39,37 +39,37 @@ export const footerData = [
     items: [
       {
         name: "Da'wah",
-        link: "program/dawah",
+        link: "program",
         blank: false,
       },
       {
         name: "Fundraising",
-        link: "program/fundraising",
+        link: "program",
         blank: false,
       },
       {
         name: "Sisterhood",
-        link: "program/sisterhood",
+        link: "program",
         blank: false,
       },
       {
         name: "Social and Welfare",
-        link: "program/social-welfare",
+        link: "program",
         blank: false,
       },
       {
         name: "Sports and Leisure",
-        link: "program/sports-leisure",
+        link: "program",
         blank: false,
       },
       {
         name: "Youth (YES)",
-        link: "program/youth",
+        link: "program",
         blank: false,
       },
       {
         name: "TPA Salsabeela",
-        link: "program/tpa-salsabeela",
+        link: "program",
         blank: false,
       },
     ],
@@ -79,12 +79,12 @@ export const footerData = [
     items: [
       {
         name: "Blog",
-        link: "media/blog",
+        link: "blog",
         blank: false,
       },
       {
         name: "News",
-        link: "media/news",
+        link: "news",
         blank: false,
       },
       {
@@ -109,12 +109,12 @@ export const footerData = [
       },
       {
         name: "Donation",
-        link: "get-involved/donation",
+        link: "donation",
         blank: false,
       },
       {
         name: "Volunteer",
-        link: "get-involved/volunteer",
+        link: "volunteer",
         blank: false,
       },
     ],

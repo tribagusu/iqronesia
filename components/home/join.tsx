@@ -5,7 +5,7 @@ import Link from "next/link";
 const Join = () => {
   return (
     <div className="container mb-10">
-      <div className="bg-[#f7f5ed] py-5 md:py-10 px-[1rem] border border-mustard rounded-md">
+      <div className="bg-[#f7f5ed] py-5 md:py-10 px-[1rem] border border-mustard rounded">
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-2 md:mb-[1rem] mx-auto md:max-w-[70%] uppercase">
           join our community
         </h2>

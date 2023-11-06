@@ -55,7 +55,7 @@ const RecentArticles = async () => {
           .map((article, i) => (
             <div
               key={i}
-              className="flex flex-col relative bg-black h-[300px] md:w-[33%] overflow-hidden rounded-2xl shadow"
+              className="flex flex-col relative bg-black h-[300px] md:w-[33%] overflow-hidden rounded shadow"
             >
               {/* <Image
                 src={img1}

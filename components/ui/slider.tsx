@@ -6,14 +6,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import img1 from "@/public/images/hero-image-1.png";
+import img2 from "@/public/images/hero-image-2.png";
+import img3 from "@/public/images/hero-image-3.png";
 
-import img1 from "@/public/images/tech1.jpeg";
-import img2 from "@/public/images/tech2.jpeg";
-import img3 from "@/public/images/tech3.jpg";
-
-const SliderCarousel = () => {
+const Hero = () => {
   const settings: any = {
     dots: true,
     infinite: true,
@@ -21,13 +18,13 @@ const SliderCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: (
       <div className="relative">
         <div className="next-slick-arrow hidden md:absolute">
           {" "}
-          <BsFillArrowRightCircleFill />{" "}
+          {/* <BsFillArrowRightCircleFill />{" "} */}
         </div>
       </div>
     ),
@@ -35,30 +32,39 @@ const SliderCarousel = () => {
       <div className="">
         <div className="prev-slick-arrow hidden md:absolute">
           {" "}
-          <BsFillArrowLeftCircleFill />{" "}
+          {/* <BsFillArrowLeftCircleFill />{" "} */}
         </div>
       </div>
     ),
   };
 
   return (
-    <div className="relative my-0 p-0 bg-pink-500">
+    <div className="w-full overflow-hidden">
       <Slider {...settings}>
-        <div className="md:h-[80vh] overflow-hidden relative">
+        <div className="w-full md:h-[70vh] overflow-hidden relative">
+          <div className="max-w-[50%] md:max-w-[35%] absolute text-white left-[10%] top-[20%] md:top-[30%]">
+            <h1 className="text-[20px] md:text-[3rem] leading-tight mb-5">
+              You only die once, <br /> you live forever.
+            </h1>
+            <p className="text-[14px] md:text-[20px] leading-tight">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+              aut. Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
           <Image
             src={img1}
             alt="image"
             className="w-full h-72 md:h-full object-cover"
           />
         </div>
-        <div className="md:h-[80vh] overflow-hidden relative">
+        <div className="md:h-[70vh] overflow-hidden relative">
           <Image
             src={img2}
             alt="image"
             className="w-full h-72 md:h-full object-cover"
           />
         </div>
-        <div className="md:h-[80vh] overflow-hidden relative">
+        <div className="md:h-[70vh] overflow-hidden relative">
           <Image
             src={img3}
             alt="image"
@@ -70,4 +76,4 @@ const SliderCarousel = () => {
   );
 };
 
-export default SliderCarousel;
+export default Hero;
