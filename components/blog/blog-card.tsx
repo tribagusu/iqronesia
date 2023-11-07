@@ -16,14 +16,13 @@ const BlogCard = ({ blog }) => {
         <Link
           key={i}
           href={`/blog/${item.fields.title.toLowerCase().replaceAll(" ", "-")}`}
-          className="bg-white rounded-xl "
         >
           <Image
             src={`https:${item.fields.thumbnail.fields.file.url}`}
             width={item.fields.thumbnail.fields.file.details.image.width}
             height={item.fields.thumbnail.fields.file.details.image.height}
             alt="foto"
-            className="w-full h-40 object-cover rounded-xl mb-5"
+            className="w-full h-40 object-cover rounded mb-5"
           />
           <div className="py-4 my-3 flex flex-col lg:h-36">
             <h4 className=" text-lg font-semibold mb-5">{item.fields.title}</h4>

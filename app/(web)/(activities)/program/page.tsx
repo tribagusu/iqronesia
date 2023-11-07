@@ -16,7 +16,7 @@ const ProgramPage = async () => {
   // console.log("program", department);
 
   return (
-    <div className="container my-16">
+    <div className="container my-10 md:my-16">
       <h1 className="text-4xl font-bold mb-2">Program</h1>
       <p className="text-lg mb-10">
         Discover various tips and information that will help you become a better

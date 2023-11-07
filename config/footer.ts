@@ -4,17 +4,17 @@ export const footerData = [
     items: [
       {
         name: "History",
-        link: "/history",
+        link: "history",
         blank: false,
       },
       {
         name: "Organisation",
-        link: "/organisation",
+        link: "organisation",
         blank: false,
       },
       {
         name: "Contact",
-        link: "/contact",
+        link: "contact",
         blank: false,
       },
     ],

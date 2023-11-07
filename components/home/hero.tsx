@@ -33,7 +33,7 @@ const Hero = () => {
         <h1 className="text-center font-bold text-[2rem] md:text-[3rem] mb-2">
           Welcome to Iqro
         </h1>
-        <p className="text-center max-w-lg text-xl px-5">
+        <p className="text-center max-w-xl text-xl px-2">
           Iqro is a community-run education and social welfare embracing the
           peaceful value of Islam for the Australian society.
         </p>

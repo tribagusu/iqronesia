@@ -24,7 +24,7 @@ const WebFooter = () => {
               {data?.items?.map((item, i) => (
                 <div key={i} className="flex flex-col">
                   <Link
-                    href={`${item.link}`}
+                    href={`/${item.link}`}
                     target={`${item.blank ? "_blank" : "_self"}`}
                     className="hover:underline hover:text-mustard md:mt-[3px]"
                   >
