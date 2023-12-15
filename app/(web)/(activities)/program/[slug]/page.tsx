@@ -2,6 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { client } from "@/lib/contentful";
 import RichText from "@/components/blog/rich-text";
+import Markdown from "react-markdown";
 
 export async function generateStaticParams() {
   const res = await client.getEntries({ content_type: "program" });
@@ -24,7 +25,7 @@ export async function generateMetadata({
 
   return {
     title: program.fields.title.toString(),
-    description: program.fields.description.toString(),
+    description: program.fields.description?.toString(),
   };
 }
 
@@ -53,7 +54,9 @@ const Program = async ({ params }: { params: { slug: string } }) => {
           Posted by <strong>{article?.fields?.author.toLocaleString()}</strong>
         </small> */}
         <div className="mt-10">
-          <RichText content={program.fields.description} />
+          <Markdown className="markdown">
+            {program.fields.description?.toLocaleString()}
+          </Markdown>
         </div>
       </div>
     </div>

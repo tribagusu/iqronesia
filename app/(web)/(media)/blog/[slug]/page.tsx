@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { client } from "@/lib/contentful";
 import RichText from "@/components/blog/rich-text";
 import { DateTime } from "luxon";
+import Markdown from "react-markdown";
 
 export async function generateStaticParams() {
   const res = await client.getEntries({ content_type: "blog" });
@@ -54,7 +55,10 @@ const Article = async ({ params }: { params: { slug: string } }) => {
           Posted by <strong>{article?.fields?.author.toLocaleString()}</strong>
         </small>
         <div className="mt-10">
-          <RichText content={article.fields.article} />
+          <Markdown className="markdown">
+            {article.fields.post.toLocaleString()}
+          </Markdown>
+          {/* <RichText content={article.fields.article} /> */}
         </div>
       </div>
     </div>

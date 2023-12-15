@@ -11,8 +11,8 @@ const Department = ({ department }) => {
   );
 
   return (
-    <div className="w-full gap-5">
-      <ul className="tab-head ml-5 md:ml-0">
+    <div className="flex flex-col md:flex-row w-full gap-5">
+      <ul className="tab-head flex flex-row md:flex-col px-5 md:mr-10 md:w-[30%]">
         {sortedDepartment?.map((program, index) => (
           <li
             key={index}
