@@ -52,9 +52,9 @@ const Program = async ({ params }: { params: { slug: string } }) => {
           alt="foto"
           className="w-full h-56 object-cover  rounded mb-5"
         /> */}
-        <h1 className="text-lg md:text-4xl font-bold mb-5">
+        {/* <h1 className="text-lg md:text-4xl font-bold mb-5">
           {program?.fields?.title.toLocaleString()}
-        </h1>
+        </h1> */}
         {/* <small className="text-sm text-gray-500">
           {DateTime.fromISO(
             article?.fields?.created_at.toLocaleString()
@@ -78,7 +78,7 @@ const Program = async ({ params }: { params: { slug: string } }) => {
             <span className="text-white text-xl mr-2 py-2">
               <IoLogoWhatsapp />
             </span>
-            JOIN WHATSAPP GROUP
+            JOIN ENGLISH CLUB
           </Link>
         </div>
       </div>

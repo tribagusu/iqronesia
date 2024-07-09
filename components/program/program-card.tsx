@@ -27,7 +27,7 @@ const ProgramCard = ({ programs, selected }) => {
                 width={program.fields.image.fields.file.details.image.width}
                 height={program.fields.image.fields.file.details.image.height}
                 alt="foto"
-                className="w-full h-56 object-cover  rounded"
+                className="w-full h-32 object-cover  rounded"
               />
               <h4 className="text-lg font-semibold mt-5 mb-1">
                 {program?.fields?.title}
