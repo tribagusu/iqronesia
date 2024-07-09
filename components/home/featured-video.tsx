@@ -38,7 +38,7 @@ const FeaturedVideo = () => {
               target="_blank"
               className="button-green smooth"
             >
-              IQRO Youtube Channel
+              Iqronesia Youtube
               <span>
                 <BsArrowRight />
               </span>

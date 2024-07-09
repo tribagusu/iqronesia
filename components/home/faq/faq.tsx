@@ -14,7 +14,7 @@ const Faq = () => {
       {/* faq goes here */}
       <div className="flex flex-col lg:flex-row justify-between w-full">
         <div className="flex flex-col md:mr-[5rem] mb-10">
-          <h2 className="text-xl font-semibold mb-5">About IQRO Foundation</h2>
+          <h2 className="text-xl font-semibold mb-5">About Iqronesia</h2>
           <p>
             This organisation began in a simple form of study circles, focusing
             to improve Al Quran reading skill for its members. As the time goes
@@ -23,14 +23,6 @@ const Faq = () => {
             lectures to further strengthen its members beliefs about the truth
             of Islam. Islam is truly a peaceful, compassionate and humane
             religion.
-            <br />
-            <br />
-            To establish its existence in view to sustain the services offered
-            to the society, members are agreed to formalise this organisation
-            further. Under the name of IQRO Foundation, this organisation
-            formally listed in Australia in 2000 as a non profit community
-            organisation, with members primarily came from Indonesian Muslim
-            background.
           </p>
         </div>
         <div className="md:min-w-[60%]">

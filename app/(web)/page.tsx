@@ -19,7 +19,7 @@ export default function Home() {
       <RecentArticles />
       <Program />
       <Donate />
-      <ProjectHighlight />
+      {/* <ProjectHighlight /> */}
       <Faq />
       <Join />
     </>

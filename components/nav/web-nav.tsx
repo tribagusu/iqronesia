@@ -7,7 +7,7 @@ import useScrollListener from "@/hooks/use-scroll";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import MobileMenu from "./mobile/mobile-menu";
-import logo from "@/public/logo.png";
+import logo from "@/public/iqronesia-logo.png";
 import { webNavData } from "@/config/nav";
 import NavMenu from "./nav-menu";
 
@@ -33,7 +33,7 @@ const WebNav = () => {
           <p className="text-center">You can make a difference!</p>
           <span className="flex items-center gap-1">
             <p>Support our community by</p>
-            <Link href="/donation" className="btn-sm-lightGreen">
+            <Link href="/donation" className="btn-sm-yellow">
               Donate
             </Link>
           </span>
@@ -45,13 +45,13 @@ const WebNav = () => {
             {/* ========== logo ========== */}
             <Link
               href="/"
-              className="block px-3 mr-5"
+              className="block px-1 mt-2 mr-5"
               onClick={() => setShowNav(false)}
             >
               <Image
                 src={logo}
                 alt="iqro"
-                className="w-auto h-[40px] md:h-[45px]"
+                className="w-auto h-[30px] md:h-[33px]"
               />
             </Link>
 
@@ -80,10 +80,10 @@ const WebNav = () => {
 
           {/* ========== hotline ========== */}
           <div className="hidden md:flex">
-            <span className="py-2 px-4 border border-darkGreen rounded-s font-bold">
+            <span className="py-2 px-4 border border-green rounded-s font-bold">
               +61 422 466 165
             </span>
-            <span className="bg-darkGreen text-white py-2 px-3 rounded-e font-bold">
+            <span className="bg-green text-white py-2 px-3 rounded-e font-bold">
               HOTLINE
             </span>
           </div>

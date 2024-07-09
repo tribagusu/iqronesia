@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logoWhite from "@/public/logo-white.png";
+import logoWhite from "@/public/iqronesia-logo-white.png";
 import { footerData } from "@/config/footer";
 import {
   AiFillLinkedin,
@@ -15,7 +15,7 @@ const WebFooter = () => {
     <footer className="space-y-6 pt-[3rem] lg:pt-[5rem] bg-green">
       <div className="container flex flex-col lg:flex-row text-white pb-0 md:pb-[2rem]">
         <div className="mr-[5rem] mb-[2rem]">
-          <Image src={logoWhite} alt="iqro" className="w-[150px]" />
+          <Image src={logoWhite} alt="iqro" className="w-[250px]" />
         </div>
         <div className="flex flex-col md:flex-row">
           {footerData?.map((data, i) => (
@@ -26,7 +26,7 @@ const WebFooter = () => {
                   <Link
                     href={`${item.blank ? item.link : "/" + item.link}`}
                     target={`${item.blank ? "_blank" : "_self"}`}
-                    className="hover:underline hover:text-mustard md:mt-[3px]"
+                    className="hover:underline hover:text-yellow md:mt-[3px]"
                   >
                     {item.name}
                   </Link>
@@ -36,7 +36,7 @@ const WebFooter = () => {
           ))}
         </div>
       </div>
-      <div className="container flex flex-col md:flex-row text-white border-t border-t-lightGreen py-[1rem]">
+      <div className="container flex flex-col md:flex-row text-white border-t border-t-white py-[1rem]">
         <div className="flex gap-3 text-white text-3xl mr-[10rem] mb-[2rem]">
           <Link href="https://instagram.com" target="_blank" className="">
             <AiFillInstagram />
@@ -60,7 +60,7 @@ const WebFooter = () => {
         </div>
       </div>
       <div className="text-center text-white bg-darkPurple2 py-4">
-        &copy; Copyright 2023 IQRO FOUNDATION INC.
+        &copy; 2024 Iqronesia by Iqro Foundation
       </div>
     </footer>
   );

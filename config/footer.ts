@@ -2,14 +2,14 @@ export const footerData = [
   {
     title: "About",
     items: [
+      // {
+      //   name: "History",
+      //   link: "history",
+      //   blank: false,
+      // },
       {
-        name: "History",
-        link: "history",
-        blank: false,
-      },
-      {
-        name: "Organisation",
-        link: "organisation",
+        name: "Community",
+        link: "community",
         blank: false,
       },
       {
@@ -19,56 +19,41 @@ export const footerData = [
       },
     ],
   },
-  {
-    title: "Project",
-    items: [
-      {
-        name: "Upgrading Masjid",
-        link: "project/upgrading-masjid",
-        blank: false,
-      },
-      {
-        name: "Iqro Perth",
-        link: "project/iqro-perth",
-        blank: false,
-      },
-    ],
-  },
+  // {
+  //   title: "Project",
+  //   items: [
+  //     {
+  //       name: "Upgrading Masjid",
+  //       link: "project/upgrading-masjid",
+  //       blank: false,
+  //     },
+  //     {
+  //       name: "Iqro Perth",
+  //       link: "project/iqro-perth",
+  //       blank: false,
+  //     },
+  //   ],
+  // },
   {
     title: "Program",
     items: [
       {
-        name: "Da'wah",
+        name: "English Club",
         link: "program",
         blank: false,
       },
       {
-        name: "Fundraising",
+        name: "Native Connect",
         link: "program",
         blank: false,
       },
       {
-        name: "Sisterhood",
+        name: "IELTS Class",
         link: "program",
         blank: false,
       },
       {
         name: "Social and Welfare",
-        link: "program",
-        blank: false,
-      },
-      {
-        name: "Sports and Leisure",
-        link: "program",
-        blank: false,
-      },
-      {
-        name: "Youth (YES)",
-        link: "program",
-        blank: false,
-      },
-      {
-        name: "TPA Salsabeela",
         link: "program",
         blank: false,
       },

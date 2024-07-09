@@ -5,12 +5,8 @@ export const webNavData: TWebNav[] = [
     title: "About",
     menu: [
       {
-        title: "History",
-        href: "history",
-      },
-      {
-        title: "Organisation",
-        href: "organisation",
+        title: "Community",
+        href: "community",
       },
       {
         title: "Contact",
@@ -24,10 +20,6 @@ export const webNavData: TWebNav[] = [
       {
         title: "Program",
         href: "program",
-      },
-      {
-        title: "Project",
-        href: "project",
       },
       {
         title: "Event",

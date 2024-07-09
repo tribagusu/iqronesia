@@ -9,10 +9,12 @@ module.exports = {
     extend: {
       colors: {
         darkGreen: "#294A33",
-        green: "#34623F",
+        green: "#2C8A14",
         lightGreen: "#607744",
         greenMustard: "#768948",
         mustard: "#B39C4D",
+        yellow: "#F9CA3D",
+        darkYellow: "#FEBF00",
       },
     },
     container: {

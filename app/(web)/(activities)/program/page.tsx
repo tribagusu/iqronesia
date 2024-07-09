@@ -19,8 +19,7 @@ const ProgramPage = async () => {
     <div className="container my-10 md:my-16">
       <h1 className="text-4xl font-bold mb-2">Program</h1>
       <p className="text-lg mb-10">
-        Discover various tips and information that will help you become a better
-        Muslim.
+        Discover various activities that will help you grow in Australia.
       </p>
 
       {/* ========== department ========== */}

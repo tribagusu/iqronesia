@@ -57,12 +57,12 @@ const Program = () => {
             <div className="flex flex-col md:flex-row w-full">
               <div className="flex flex-col bg-[#f7f5ed] md:w-[50%] p-10">
                 <div className="flex flex-col">
-                  <small className="pill mb-5 bg-lightGreen text-white">
+                  <small className="pill mb-5 bg-yellow text-black">
                     {program.category.toLocaleUpperCase()}
                   </small>
                   <h1 className="text-2xl mb-2 font-bold">{program.title}</h1>
                   <p className="">{maxChar(program.desc, 300)}</p>
-                  <div className="flex py-5 text-mustard font-medium">
+                  <div className="flex py-5 text-darkGreen font-medium">
                     <Link
                       href="/"
                       className="flex items-center gap-2 hover:translate-x-2 ease-in-out duration-300"

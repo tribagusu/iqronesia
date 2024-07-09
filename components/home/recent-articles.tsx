@@ -75,7 +75,7 @@ const RecentArticles = async () => {
               />
               <div className="absolute left-0 bottom-0 text-white px-5 mb-5">
                 <div className="flex items-center justify-between ">
-                  <small className="pill px-2 mb-3 bg-mustard">
+                  <small className="pill px-2 mb-3 bg-yellow text-black">
                     {article?.fields?.author.toLocaleString()}
                   </small>
                   <small>
