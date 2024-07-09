@@ -4,7 +4,7 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 
 export default function NotFound() {
   return (
-    <div className="flex h-screen overflow-auto bg-darkGreen text-white">
+    <div className="flex h-screen overflow-auto bg-green text-white">
       <div className="flex flex-col mx-auto items-center justify-center px-4">
         <h1 className="text-[100px] md:text-[130px] leading-none">404</h1>
         <p className="text-center text-lg md:text-xl max-w-lg font-light">

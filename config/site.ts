@@ -9,11 +9,11 @@ export type SiteConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-  name: "iqro foundation",
-  description: "iqro foundation",
-  url: "https://iqro.org.au",
+  name: "Iqronesia by Iqro Foundation",
+  description: "Iqronesia by Iqro Foundation",
+  url: "https://iqronesia.org",
   // ogImage: "",
   links: {
-    instagram: "https://instagram.com/iqro",
+    instagram: "https://instagram.com/iqronesia",
   },
 };

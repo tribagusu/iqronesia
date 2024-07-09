@@ -24,8 +24,7 @@ const Hero = () => {
             up your game.
           </p>
           <Link
-            href="https://www.youtube.com/@IQROChannel/streams"
-            target="_blank"
+            href="/program/english-club"
             className="btn-sm-green smooth mt-5"
           >
             <span className="p-1">JOIN NOW</span>
